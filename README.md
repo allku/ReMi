@@ -25,12 +25,12 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         + ln -s libclntsh.dylib.11.1 libclntsh.dylib
         + ln -s libocci.dylib.11.1 libocci.dylib
     - Añadir al archivo .bash_profile: nano .bash_profile 
-        #Oracle Instant Client
-        export ORACLE_HOME=/Users/jorgequiguango/opt/instantclient_11_2
-        export DYLD_LIBRARY_PATH=$ORACLE_HOME
-        export LD_LIBRARY_PATH=$ORACLE_HOME
-        export NLS_LANG=AMERICAN_AMERICA.UTF8
-        export PATH=$PATH:$ORACLE_HOME
+        >#Oracle Instant Client
+        >export ORACLE_HOME=/Users/jorgequiguango/opt/instantclient_11_2
+        >export DYLD_LIBRARY_PATH=$ORACLE_HOME
+        >export LD_LIBRARY_PATH=$ORACLE_HOME
+        >export NLS_LANG=AMERICAN_AMERICA.UTF8
+        >export PATH=$PATH:$ORACLE_HOME
     - Ejecutar: source .bash_profile 
     - Añadir el nombre del host al archivo /etc/hosts: sudo nano /etc/hosts
         127.0.0.1       localhost       maclibro        maclibro.local
