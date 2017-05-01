@@ -7,7 +7,7 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         + instantclient-basic-macos.x64-11.2.0.4.0.zip 
         + instantclient-sqlplus-macos.x64-11.2.0.4.0.zip 
         + instantclient-sdk-macos.x64-11.2.0.4.0.zip
-    - Copiar en un directorio todos los archivos, por ejemplo: /Users/jorgequiguango/opt/instantclient_11_2
+    - Copiar en un directorio todos los archivos, por ejemplo: /Users/jorgequiguango/opt/instantclient_11_2.
         ```
         libocci.dylib.11.1
         libociei.dylib
