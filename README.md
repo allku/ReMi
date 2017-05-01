@@ -24,7 +24,10 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
     - Crear enlaces simbólicos en el terminal
         + ln -s libclntsh.dylib.11.1 libclntsh.dylib
         + ln -s libocci.dylib.11.1 libocci.dylib
-    - Añadir al archivo .bash_profile: nano .bash_profile 
+    - Añadir al archivo .bash_profile: 
+        ```
+        nano .bash_profile 
+        ```
         ```
         #Oracle Instant Client
         export ORACLE_HOME=/Users/jorgequiguango/opt/instantclient_11_2
@@ -33,12 +36,29 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         export NLS_LANG=AMERICAN_AMERICA.UTF8
         export PATH=$PATH:$ORACLE_HOME
         ```
-    - Ejecutar: source .bash_profile 
-    - Añadir el nombre del host al archivo /etc/hosts: sudo nano /etc/hosts
+    - Ejecutar: 
+        ```
+        source .bash_profile 
+        ```
+    - Añadir el nombre del host al archivo /etc/hosts: 
+        ```
+        sudo nano /etc/hosts
         127.0.0.1       localhost       maclibro        maclibro.local
-    - Probar la conexión: sqlplus lucila/l@//192.168.1.18:1521/orcl
+        ```
+    - Probar la conexión: 
+        ```
+        sqlplus lucila/l@//192.168.1.18:1521/orcl
+        ```
     - En Mac OSX ya está pre-instalador Python 2.7, caso contrario descargar del sitio oficial.
-    - Instalar pip: sudo easy_install pip
-    - Instalar sqlAlchemy: sudo pip install sqlalchemy
-    - Instalar cx_Oracle: sudo pip install cx_oracle
-    
+    - Instalar pip: 
+        ```
+        sudo easy_install pip
+        ```
+    - Instalar sqlAlchemy: 
+        ```
+        sudo pip install sqlalchemy
+        ```
+    - Instalar cx_Oracle: 
+        ```
+        sudo pip install cx_oracle
+        ```
