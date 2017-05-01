@@ -1,9 +1,9 @@
 # Remi
 Aplicación para recuperar la información de comprobantes electrónicos del SRI Ecuador
 
-* Instalación en Mac OSX para Oracle
+* Instalación en Mac OSX para Oracle.
 
-    - Descargar Oracle Instant Client http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
+    - Descargar Oracle Instant Client. http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
         + instantclient-basic-macos.x64-11.2.0.4.0.zip 
         + instantclient-sqlplus-macos.x64-11.2.0.4.0.zip 
         + instantclient-sdk-macos.x64-11.2.0.4.0.zip
@@ -21,7 +21,7 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         uidrvci
         xstreams.jar
         ```
-    - Crear enlaces simbólicos en el terminal
+    - Crear enlaces simbólicos en el terminal:
         ```
         ln -s libclntsh.dylib.11.1 libclntsh.dylib
         ln -s libocci.dylib.11.1 libocci.dylib
@@ -53,16 +53,16 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         ```
         sqlplus lucila/l@//192.168.1.18:1521/orcl
         ```
-    - En Mac OSX ya está pre-instalador Python 2.7, caso contrario descargar del sitio oficial.
-    - Instalar pip: 
+    - Descargar del sitio oficial https://www.python.org.
+    - Instalar pip, si no está instalado:
         ```
         sudo easy_install pip
-        ```
-    - Instalar sqlAlchemy: 
-        ```
-        sudo pip install sqlalchemy
         ```
     - Instalar cx_Oracle: 
         ```
         sudo pip install cx_oracle
+        ```
+     - Instalar sqlAlchemy: 
+        ```
+        sudo pip install sqlalchemy
         ```
