@@ -22,8 +22,10 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         xstreams.jar
         ```
     - Crear enlaces simbólicos en el terminal
-        + ln -s libclntsh.dylib.11.1 libclntsh.dylib
-        + ln -s libocci.dylib.11.1 libocci.dylib
+        ```
+        ln -s libclntsh.dylib.11.1 libclntsh.dylib
+        ln -s libocci.dylib.11.1 libocci.dylib
+        ```
     - Añadir al archivo .bash_profile: 
         ```
         nano .bash_profile 
@@ -43,6 +45,8 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
     - Añadir el nombre del host al archivo /etc/hosts: 
         ```
         sudo nano /etc/hosts
+        ```
+        ```
         127.0.0.1       localhost       maclibro        maclibro.local
         ```
     - Probar la conexión: 
