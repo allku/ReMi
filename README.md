@@ -8,19 +8,19 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         + instantclient-sqlplus-macos.x64-11.2.0.4.0.zip 
         + instantclient-sdk-macos.x64-11.2.0.4.0.zip
     - Copiar en un directorio todos los archivos, por ejemplo: /Users/jorgequiguango/opt/instantclient_11_2
-        '''
-        libocci.dylib.11.1
-        libociei.dylib
-        libocijdbc11.dylib
-        libsqlplus.dylib
-        libsqlplusic.dylib
-        ojdbc5.jar
-        ojdbc6.jar
-        sdk
-        sqlplus
-        uidrvci
-        xstreams.jar
-        '''
+        
+        >libocci.dylib.11.1
+        >libociei.dylib
+        >libocijdbc11.dylib
+        >libsqlplus.dylib
+        >libsqlplusic.dylib
+        >ojdbc5.jar
+        >ojdbc6.jar
+        >sdk
+        >sqlplus
+        >uidrvci
+        >xstreams.jar
+        
     - Crear enlaces simbólicos en el terminal
         + ln -s libclntsh.dylib.11.1 libclntsh.dylib
         + ln -s libocci.dylib.11.1 libocci.dylib
