@@ -1,6 +1,8 @@
 # Remi
 Aplicación para recuperar la información de comprobantes electrónicos del SRI Ecuador
 
+*Python 2.7*
+
 * Instalación del conector de Oracle en Mac OSX.
 
     - Descargar Oracle Instant Client. http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
