@@ -159,7 +159,18 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         ln -s libclntsh.so.11.1 libclntsh.so
         ln -s libocci.so.11.1 libocci.so
         
-4. Añadir al archivo .bashrc: 
+4. Crear el archivo oracle.conf y añadir la ruta:
+
+        sudo vim /etc/ld.so.conf.d/oracle.conf
+        
+        /app/instantclient_11_2
+        
+5. Ejecutar el comando e instalar las dependencias
+
+        sudo ldconfig
+        sudo apt install libaio-dev libaio1
+        
+6. Añadir al archivo .bashrc: 
 
         vim .bashrc
 
@@ -167,23 +178,23 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         export LD_LIBRARY_PATH=/app/instantclient_11_2:$LD_LIBRARY_PATH
         export PATH=/app/instantclient_11_2:$PATH
 
-5. Ejecutar: 
+7. Ejecutar: 
 
         source .bashrc 
         
-6. Probar la conexión: 
+8. Probar la conexión: 
 
         sqlplus lucila/l@//192.168.1.18:1521/orcl
         
-8. Instalar Python 3, si no está instalado:
+9. Instalar Python 3, si no está instalado:
 
         sudo apt install python3
 
-9. Instalar pip, si no está instalado:
+10. Instalar pip, si no está instalado:
 
-       sudo apt-get install -y python3-pip
+        sudo apt-get install python3-pip
        
-10. Instalar cx_Oracle
+11. Instalar cx_Oracle
 
         pip3 install cx_oracle        
         
