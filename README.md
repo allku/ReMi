@@ -130,8 +130,9 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         ```
         pip install cx_oracle
         ```
+#### Instalación del conector de Oracle en Ubuntu.
 
-* Instalar sqlAlchemy: 
+### Instalar sqlAlchemy: 
         ```
-        pip install sqlalchemy
+        pip3 install sqlalchemy
         ```
