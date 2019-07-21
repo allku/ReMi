@@ -1,11 +1,9 @@
-# ReMi
+# ReMi - Python 3
 Aplicación para recuperar la información de comprobantes electrónicos del SRI Ecuador
 
-## *Python 3*
+## Oracle
 
-### Oracle
-
-#### Instalación del conector de Oracle en Mac OSX.
+### Instalación del conector de Oracle en Mac OSX.
 
     - Descargar Oracle Instant Client. https://www.oracle.com/database/technologies/instant-client/downloads.html
         + instantclient-basic-macos.x64-11.2.0.4.0.zip 
@@ -69,9 +67,9 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         ```
         pip install cx_oracle
         ```
-#### Instalación del conector de Oracle en Windows.
+### Instalación del conector de Oracle en Windows.
 
-    - Descargar Oracle Instant Client. http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
+    - Descargar Oracle Instant Client. https://www.oracle.com/database/technologies/instant-client/downloads.html
         + instantclient-basic-nt-11.2.0.4.0.zip
         + instantclient-sqlplus-nt-11.2.0.4.0.zip
         + instantclient-sdk-nt-11.2.0.4.0.zip
@@ -130,9 +128,14 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         ```
         pip install cx_oracle
         ```
-#### Instalación del conector de Oracle en Ubuntu.
+### Instalación del conector de Oracle en Ubuntu.
 
-### Instalar sqlAlchemy: 
+    - Descargar Oracle Instant Client. https://www.oracle.com/database/technologies/instant-client/downloads.html
+        + instantclient-basic-linux.x64-11.2.0.4.0.zip
+        + instantclient-sdk-linux.x64-11.2.0.4.0.zip
+        + instantclient-sqlplus-linux.x64-11.2.0.4.0.zip
+
+## Instalar sqlAlchemy: 
         ```
         pip3 install sqlalchemy
         ```
