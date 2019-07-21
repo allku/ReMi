@@ -1,5 +1,5 @@
 # ReMi - Python 3
-Aplicación para recuperar la información de comprobantes electrónicos del SRI Ecuador
+Aplicación para recuperar la información de comprobantes electrónicos del SRI Ecuador.
 
 ## Oracle
 
@@ -121,8 +121,8 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
 
         sqlplus lucila/l@//192.168.1.18:1521/orcl
 
-5. Si intenta con Python 2, descargar Microsoft Visual C++ Compiler for Python 2.7 del sitio de Microsoft https://www.microsoft.com/en-us/download/details.aspx?id=44266 e instalar. O puedes mirar aquí según la versión de python que uses https://wiki.python.org/moin/WindowsCompilers
-6. Descargar Python del sitio oficial https://www.python.org e instalar con todas las opciones activadas
+5. Si intenta con Python 2, descargar Microsoft Visual C++ Compiler for Python 2.7 del sitio de Microsoft https://www.microsoft.com/en-us/download/details.aspx?id=44266 e instalar. O puedes mirar aquí según la versión de python que uses https://wiki.python.org/moin/WindowsCompilers.
+6. Descargar Python del sitio oficial https://www.python.org e instalar con todas las opciones activadas.
 7. Instalar cx_Oracle: 
 
         pip3 install cx_oracle
