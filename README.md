@@ -5,9 +5,11 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
 
 ### Instalación del conector de Oracle en Mac OSX.
 1. Descargar Oracle Instant Client. https://www.oracle.com/database/technologies/instant-client/downloads.html
+        ```
         + instantclient-basic-macos.x64-11.2.0.4.0.zip 
         + instantclient-sqlplus-macos.x64-11.2.0.4.0.zip 
         + instantclient-sdk-macos.x64-11.2.0.4.0.zip
+        ```        
 2. Copiar en un directorio todos los archivos, por ejemplo: /Users/jorgequiguango/opt/instantclient_11_2.
         ```
         libocci.dylib.11.1
