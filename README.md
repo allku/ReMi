@@ -3,7 +3,7 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
 
 ## Oracle
 
-### Instalación del conector de Oracle en Mac OSX.
+### Instalación del conector de Oracle en Mac OSX
 1. Descargar Oracle Instant Client. https://www.oracle.com/database/technologies/instant-client/downloads.html
 
 
@@ -12,7 +12,7 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         > instantclient-sdk-macos.x64-11.2.0.4.0.zip
 
 
-2. Descomprimir y copiar en un directorio todos los archivos, por ejemplo: /Users/allku/opt/instantclient_11_2.
+2. Descomprimir y copiar en un directorio todos los archivos, por ejemplo: /Users/allku/opt/instantclient_11_2
 
         libocci.dylib.11.1
         libociei.dylib
@@ -57,7 +57,7 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
 
         sqlplus lucila/l@//192.168.1.18:1521/orcl
 
-8. Descargar Python 3 de el sitio oficial https://www.python.org o https://brew.sh/, e instalar.
+8. Descargar Python 3 de el sitio oficial https://www.python.org o https://brew.sh/ e instalar
 9. Instalar pip, si no está instalado, por ejemplo:
 
        easy_install pip3
@@ -66,7 +66,7 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
 
         pip3 install cx_oracle
 
-### Instalación del conector de Oracle en Windows.
+### Instalación del conector de Oracle en Windows
 
 1. Descargar Oracle Instant Client. https://www.oracle.com/database/technologies/instant-client/downloads.html
         
@@ -74,7 +74,7 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         > instantclient-sqlplus-nt-11.2.0.4.0.zip
         > instantclient-sqlplus-windows.x64-11.2.0.4.0.zip
         
-2. Descomprimir y copiar en un directorio todos los archivos, por ejemplo: C:\instantclient_11_2.
+2. Descomprimir y copiar en un directorio todos los archivos, por ejemplo: C:\instantclient_11_2
 
         sdk
         vc8
@@ -121,8 +121,8 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
 
         sqlplus lucila/l@//192.168.1.18:1521/orcl
 
-5. Si intenta con Python 2, descargar Microsoft Visual C++ Compiler for Python 2.7 del sitio de Microsoft https://www.microsoft.com/en-us/download/details.aspx?id=44266, e instalar.
-6. Descargar Python del sitio oficial https://www.python.org, e instalar con todas las opciones activadas.
+5. Si intenta con Python 2, descargar Microsoft Visual C++ Compiler for Python 2.7 del sitio de Microsoft https://www.microsoft.com/en-us/download/details.aspx?id=44266 e instalar. O puedes mirar aquí según la versión de python que uses https://wiki.python.org/moin/WindowsCompilers
+6. Descargar Python del sitio oficial https://www.python.org e instalar con todas las opciones activadas
 7. Instalar cx_Oracle: 
 
         pip3 install cx_oracle
@@ -134,7 +134,59 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         > instantclient-basic-linux.x64-11.2.0.4.0.zip
         > instantclient-sdk-linux.x64-11.2.0.4.0.zip
         > instantclient-sqlplus-linux.x64-11.2.0.4.0.zip
+        
+2. Descomprimir y copiar en un directorio todos los archivos, por ejemplo: /app/instantclient_11_2
 
+        adrci
+        genezi
+        glogin.sql
+        libclntsh.so.11.1
+        libnnz11.so
+        libocci.so.11.1
+        libociei.so
+        libocijdbc11.so
+        libsqlplusic.so
+        libsqlplus.so
+        ojdbc5.jar
+        ojdbc6.jar
+        sdk
+        sqlplus
+        uidrvci
+        xstreams.jar
+
+3. Crear enlaces simbólicos en el terminal:
+        
+        ln -s libclntsh.so.11.1 libclntsh.so
+        ln -s libocci.so.11.1 libocci.so
+        
+4. Añadir al archivo .bashrc: 
+
+        vim .bashrc
+
+        #Oracle Instant Client
+        export LD_LIBRARY_PATH=/app/instantclient_11_2:$LD_LIBRARY_PATH
+        export PATH=/app/instantclient_11_2:$PATH
+
+5. Ejecutar: 
+
+        source .bashrc 
+        
+6. Probar la conexión: 
+
+        sqlplus lucila/l@//192.168.1.18:1521/orcl
+        
+8. Instalar Python 3, si no está instalado:
+
+        sudo apt install python3
+
+9. Instalar pip, si no está instalado:
+
+       sudo apt-get install -y python3-pip
+       
+10. Instalar cx_Oracle
+
+        pip3 install cx_oracle        
+        
 ## Instalar sqlAlchemy: 
 
         pip3 install sqlalchemy
