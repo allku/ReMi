@@ -1,7 +1,9 @@
-# Remi
+# ReMi
 Aplicación para recuperar la información de comprobantes electrónicos del SRI Ecuador
 
-## *Python 2.7*
+## *Python 3*
+
+### Oracle
 
 * Instalación del conector de Oracle en Mac OSX.
 
