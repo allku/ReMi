@@ -5,11 +5,11 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
 
 ### Instalación del conector de Oracle en Mac OSX.
 
-    - Descargar Oracle Instant Client. https://www.oracle.com/database/technologies/instant-client/downloads.html
+    1. Descargar Oracle Instant Client. https://www.oracle.com/database/technologies/instant-client/downloads.html
         + instantclient-basic-macos.x64-11.2.0.4.0.zip 
         + instantclient-sqlplus-macos.x64-11.2.0.4.0.zip 
         + instantclient-sdk-macos.x64-11.2.0.4.0.zip
-    - Copiar en un directorio todos los archivos, por ejemplo: /Users/jorgequiguango/opt/instantclient_11_2.
+    2. Copiar en un directorio todos los archivos, por ejemplo: /Users/jorgequiguango/opt/instantclient_11_2.
         ```
         libocci.dylib.11.1
         libociei.dylib
@@ -23,12 +23,12 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         uidrvci
         xstreams.jar
         ```
-    - Crear enlaces simbólicos en el terminal:
+    3. Crear enlaces simbólicos en el terminal:
         ```
         ln -s libclntsh.dylib.11.1 libclntsh.dylib
         ln -s libocci.dylib.11.1 libocci.dylib
         ```
-    - Añadir al archivo .bash_profile: 
+    4. Añadir al archivo .bash_profile: 
         ```
         nano .bash_profile 
         ```
@@ -40,32 +40,32 @@ Aplicación para recuperar la información de comprobantes electrónicos del SRI
         export NLS_LANG=AMERICAN_AMERICA.UTF8
         export PATH=$PATH:$ORACLE_HOME
         ```
-    - Ejecutar: 
+    5. Ejecutar: 
         ```
         source .bash_profile 
         ```
-    - Añadir el nombre del host al archivo /etc/hosts: 
+    6. Añadir el nombre del host al archivo /etc/hosts: 
         ```
         sudo nano /etc/hosts
         ```
         ```
         127.0.0.1       localhost       maclibro        maclibro.local
         ```
-    - Probar la conexión: 
+    7. Probar la conexión: 
         ```
         sqlplus lucila/l@//192.168.1.18:1521/orcl
         ```
-    - Descargar Python del sitio oficial https://www.python.org, e instalar.
-    - Instalar pip, si no está instalado:
+    8. Descargar Python 3 de el sitio oficial https://www.python.org, e instalar.
+    9. Instalar pip, si no está instalado:
         ```
-        pip --version
+        pip3 --version
         ```
         ```
-        easy_install pip
+        easy_install pip3
         ```
-    - Instalar cx_Oracle: 
+    10 Instalar cx_Oracle: 
         ```
-        pip install cx_oracle
+        pip3 install cx_oracle
         ```
 ### Instalación del conector de Oracle en Windows.
 
