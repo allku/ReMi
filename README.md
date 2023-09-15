@@ -1,5 +1,4 @@
-# ReMi - Python 3
-Aplicación para recuperar la información de comprobantes electrónicos del SRI Ecuador.
+# Configure Instant Client
 
 ## Oracle
 
